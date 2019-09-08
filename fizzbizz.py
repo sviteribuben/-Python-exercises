@@ -7,11 +7,9 @@
 #Если число кратно 15 то программа должна выводить слово FIZZBIZZ.
 
 for number in range(1, 101):
-	result = ''
-	if number % 3 == 0:
-		result += 'FIZZ'
-	elif number % 5 == 0:
-		result +='BIZZ'
-	elif number % 15 == 0:
-		result += 'FIZZBIZZ'
-	print(result or number)
+    result = ''
+    if number % 3 == 0:
+        result += 'FIZZ'
+    if number % 5 == 0:
+        result += 'BIZZ'
+    print(result or number)
